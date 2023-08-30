@@ -42,7 +42,7 @@ streamlit.header("Liste des fruits:")
 streamlit.dataframe(my_data_rows)
 
 add_my_fruit = streamlit.text_input('What fruit would you like to add?','Pomme')
-# my_cur.execute("INSERT INTO pc_rivery_db.public.fruit_load_list values ('From streamlit')")
+my_cur.execute("INSERT INTO pc_rivery_db.public.fruit_load_list values ('From streamlit')")
 
 
 
