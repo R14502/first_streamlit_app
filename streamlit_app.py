@@ -38,7 +38,7 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 streamlit.dataframe(fruityvice_normalized)
 
 # Ne pas exécuter en dessous de cette ligne
-streamlit.stop()
+st.stop()
 
 # Utilisation de la librairie snowflake connector que nous avons créé
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
